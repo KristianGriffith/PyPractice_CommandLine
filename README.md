@@ -1,2 +1,2 @@
 # PyPractice
-Starting to learn python from level, most of my projects here to look back at
+THis marks the official beginning of my python journey.
