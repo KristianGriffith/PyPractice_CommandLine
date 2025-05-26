@@ -13,14 +13,20 @@ balance = 0.00
 b = '-'
 #
 # #Funtion created to clear the current terminal for any of the 3 main OSs
+
 def clear_screen():
     if os.name == 'nt':
         os.system('cls')
     else:
         os.system('clear')
 
-def n():
-    null = input()
+
+
+def ast():
+    for y in range(40):
+        print("*",end="")
+
+
 
 def showBalance(balance):
     clear_screen()
@@ -90,15 +96,6 @@ def goAgain():
 
 
 
-def ast():
-    for y in range(40):
-        print("*",end="")
-
-
-
-
-
-
 
 
 while True:
@@ -137,8 +134,7 @@ while True:
             balance = withdraw(balance)
             print("\n")
             time.sleep(2)
-            sys.stdout.write("\033[F")
-            sys.stdout.write("\033[K")
+            clear_screen()
             if not goAgain():
                 break
         case 4:
@@ -149,5 +145,5 @@ while True:
             break
 
         case _:
-            break
+            continue
 
