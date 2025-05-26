@@ -1,3 +1,9 @@
+# Name      :Kristian Griffith
+# Date      :20th May 2025
+
+# Definition:
+# Banking program to simulate an ATM experience
+
 import time
 import os
 import sys
